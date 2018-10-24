@@ -33,11 +33,23 @@ h4 {
 }
 
 h5 {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: normal;
-    margin-top: 30px;
-    margin-bottom:20px;
-    font-family: 'Karla', sans-serif;
+    margin: 0 auto;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+h7 {
+    font-size: 12px;
+    font-weight: normal;
+    display: inline-block;
+    padding-right: 46px;
+    padding-top: 20px;
 }
 
 p {
@@ -243,6 +255,18 @@ button:hover {
     padding: 12px 46px;
 }
 
+.cart-buttons {
+    margin-top: 20px;
+}
+
+.button2 {
+    background-color:#FFEDC2;
+    border: none;
+    margin: 15px 0px;
+    padding: 6px 24px;
+    font-size: 10px;
+}
+
 .vert {
     display:inline-block;
     position: relative;
@@ -272,8 +296,75 @@ button:hover {
 
 #insta {
     text-align: center;
+    font-family: 'karla', sans-serif;
+    margin-top: 20px;
 }
 
 .insta-caption{
     margin-top:-10px;
+}
+
+hr {
+    display: block;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 60%;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.cart-item{
+    display:flex;
+    padding-top: 30px;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.cart-img{
+    height:120px;
+    width: auto;
+}
+
+.cart-detail{
+    width: 60%;
+    padding-left: 50px;
+}
+
+.qg {
+    display:inline-block;
+}
+
+.space {
+    width: 20px;
+    height: 20px;
+    display:inline-block;
+}
+
+.item-price {
+    justify-content:flex-end;
+    text-align: right;
+    margin: 0 auto;
+    margin-right: 0;
+
+}
+
+.total-price{
+    text-align: right;
+    padding-right: 20%;
+    padding-top: 20px;
+}
+
+.checkout{
+    text-align: center;
+    padding-top: 20px;
 }
