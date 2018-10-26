@@ -55,7 +55,7 @@ function item(){
 
         //changing images for ORIGINAL BUNS based on glaze option
         //first check if on ORIGINAL bun detail page
-        if ($(".details-img").attr('src')=='original.jpg'){
+        if ($(".details-text h2").text()=='Original'){
             console.log('hi');
             if (temp_glazes=='None'){
                 $(".details-img").attr('src', 'original.jpg');
