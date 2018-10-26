@@ -151,11 +151,11 @@ nav ul li a{
 }
 
 .next{
-    right:140px;
+    right:200px;
 }
 
 .prev{
-    left:140px;
+    left:200px;
 }
 
 .prev:hover, .next:hover {
@@ -177,11 +177,13 @@ nav ul li a{
 }
 
 .item-img {
-    height: 260px;
-    width: auto;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
 }
 
 .caption {
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -222,7 +224,9 @@ a:hover, a:active {
 }
 
 /**button code based on https://www.w3schools.com/css/css3_buttons.asp**/
-
+.button_active{
+background:#FFEDC2;
+}
 button {
     border: none;
     background-color: #FEFAF1;
@@ -250,6 +254,27 @@ button:hover {
 }
 .button1 {
     background-color:#FFEDC2;
+    border: none;
+    margin: 4px 2px;
+    padding: 12px 46px;
+}
+
+.button3 {
+    background-color: #ffedc2;
+    border: none;
+    margin: 4px 2px;
+    padding: 12px 46px;
+    opacity: 0.3;
+    cursor: default;
+}
+
+.button3_active{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.button4 {
+    background-color: #ffedc2;
     border: none;
     margin: 4px 2px;
     padding: 12px 46px;
@@ -298,6 +323,7 @@ button:hover {
     text-align: center;
     font-family: 'karla', sans-serif;
     margin-top: 20px;
+    margin-bottom: 100px;
 }
 
 .insta-caption{
@@ -345,7 +371,7 @@ hr {
 }
 
 .space {
-    width: 20px;
+    width: 38px;
     height: 20px;
     display:inline-block;
 }
@@ -367,4 +393,34 @@ hr {
 .checkout{
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+/**shopping cart counter from Codepen https://codepen.io/Paul34/pen/oxQvEv**/
+
+
+.ct-bg{
+    background: #FFE4A1;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    opacity: 0.8;
+    position: absolute;
+    top: -2px;
+    right: -6px;
+}
+
+#item-count{
+    font-size:8px;
+    font-weight: normal;
+    text-align: center;
+    color: black;
+    margin-top: 1px;
+    margin-left: 1px;
+}
+
+.mini-cart {
+    position: relative;
 }

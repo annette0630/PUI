@@ -2,7 +2,7 @@
 
     <html>
     <head>
-        <title>bun bun bakeshop - walnut</title>
+        <title>bun bun bakeshop - order</title>
         <!-- styles -->
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" href="favi.png"/>
@@ -10,6 +10,9 @@
         <!--fonts-->
         <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+        <!--javascript-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js" type="text/javascript"></script>
     </head>
     <body>
         <header>
@@ -20,7 +23,13 @@
                     <li><a href="#">contact</a></li>
                     <li><a href="#">about</a></li>
                     <li><a href="#">sign in/join</a></li>
-                    <li><a href="cart.html"><img id="cart" src="cart.png"></a></li>
+                    <li><div class="mini-cart">
+                        <a href="cart.html"><img id="cart" src="cart.png"></a>
+                        <div class="ct-bg">
+                            <div id="item-count">0</div>
+                        </div>
+                    </div>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -69,3 +78,4 @@
                     </div>
             </div>
         </div>
+        <script>miniCart()</script>
