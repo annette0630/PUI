@@ -91,7 +91,7 @@ header{
     width:auto;
     height: 36px;
     margin-top: 20px;
-    padding-left: 140px;
+    padding-left: 170px;
 }
 
 nav{
@@ -100,7 +100,7 @@ nav{
 }
 nav ul{
     list-style:none;
-    padding-right: 140px;
+    padding-right: 180px;
 }
 nav ul li{
     display: inline-block;
@@ -151,11 +151,11 @@ nav ul li a{
 }
 
 .next{
-    right:200px;
+    right:14%;
 }
 
 .prev{
-    left:200px;
+    left:14%;
 }
 
 .prev:hover, .next:hover {
